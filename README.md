@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مفاجأة رمضانيه 🌙✨</title>
-
+<title>مفاجأة رمضان 🌙✨</title>
 <style>
 body{
     margin:0;
@@ -13,85 +12,81 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
-    overflow:hidden;
+    min-height:100vh;
     color:white;
+    padding:15px;
+    box-sizing:border-box;
 }
-
-/* Stars */
 .stars{
-    position:absolute;
+    position:fixed;
     width:100%;
     height:100%;
     background: radial-gradient(white 1px, transparent 1px);
     background-size: 40px 40px;
     animation: moveStars 20s linear infinite;
     opacity:0.5;
+    top:0;
+    left:0;
+    z-index:0;
 }
 @keyframes moveStars{
     from {background-position: 0 0;}
     to {background-position: 1000px 1000px;}
 }
-
-/* Moon */
 .moon{
-    position:absolute;
-    top:40px;
+    position:fixed;
+    top:20px;
     left:50%;
     transform:translateX(-50%);
-    font-size:75px;
+    font-size:60px;
     animation: float 5s ease-in-out infinite;
+    z-index:1;
 }
 @keyframes float{
     0%{transform:translate(-50%,0px);}
-    50%{transform:translate(-50%,25px);}
+    50%{transform:translate(-50%,15px);}
     100%{transform:translate(-50%,0px);}
 }
-
-/* Lanterns */
 .lantern{
-    position:absolute;
-    font-size:45px;
+    position:fixed;
+    font-size:40px;
     animation: swing 3s infinite alternate ease-in-out;
+    z-index:1;
 }
-.l1{ left:8%; top:5%; }
-.l2{ left:25%; top:10%; }
-.l3{ left:42%; top:6%; }
-.l4{ right:42%; top:6%; }
-.l5{ right:25%; top:10%; }
-.l6{ right:8%; top:5%; }
-
+.l1{ left:5%; top:10%; }
+.l2{ left:20%; top:15%; }
+.l3{ right:20%; top:12%; }
+.l4{ right:5%; top:8%; }
 @keyframes swing{
-    from{ transform:rotate(-15deg);}
-    to{ transform:rotate(15deg);}
+    from{ transform:rotate(-10deg);}
+    to{ transform:rotate(10deg);}
 }
-
-/* Card */
 .card{
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(12px);
-    width:90%;
-    max-width:420px;
-    padding:30px;
+    width:100%;
+    max-width:400px;
+    padding:25px;
     border-radius:25px;
     box-shadow:0 20px 50px rgba(0,0,0,0.6);
     text-align:center;
     border:1px solid rgba(255,255,255,0.3);
+    position:relative;
     z-index:2;
+    margin:20px auto;
 }
-
-h1{ color:#ffd700; }
+h1{ color:#ffd700; font-size:24px; }
 input{
     width:100%;
     padding:12px;
     border-radius:12px;
     border:none;
-    margin-top:15px;
+    margin:15px 0;
     font-size:16px;
     text-align:center;
+    box-sizing:border-box;
 }
 button{
-    margin-top:20px;
     background:#ffd700;
     color:#000;
     border:none;
@@ -100,38 +95,34 @@ button{
     font-size:16px;
     cursor:pointer;
     font-weight:bold;
+    width:100%;
 }
 button:hover{
-    transform:scale(1.08);
+    transform:scale(1.05);
     transition:0.3s;
 }
-
 .hidden{ display:none; }
 .message{
-    line-height:1.9;
-    font-size:18px;
+    line-height:1.8;
+    font-size:16px;
 }
+#error{ color:#ff6b6b; margin:10px 0 0; }
 </style>
 </head>
-
 <body>
-
 <div class="stars"></div>
 <div class="moon">🌙</div>
-
 <div class="lantern l1">🏮</div>
 <div class="lantern l2">🏮</div>
 <div class="lantern l3">🏮</div>
 <div class="lantern l4">🏮</div>
-<div class="lantern l5">🏮</div>
-<div class="lantern l6">🏮</div>
 
 <div class="card" id="loginBox">
     <h1>مرحبًا إيهاب</h1>
     <p>🔐 كلمة المرور: <strong>يوسف</strong></p>
     <input type="text" id="nameInput" placeholder="اكتب كلمة المرور">
     <button onclick="checkName()">دخول ✨</button>
-    <p id="error" style="color:#ff6b6b;"></p>
+    <p id="error"></p>
 </div>
 
 <div class="card hidden" id="messageBox">
@@ -147,8 +138,7 @@ button:hover{
     </div>
 </div>
 
-<!-- Direct MP3 audio for Ramadan song -->
-<audio id="ramadanSong" src="https://archive.org/download/ramadan-jana/ramadan_jana.mp3"></audio>
+<audio id="ramadanSong" src="song00.mp3"></audio>
 
 <script>
 function checkName(){
@@ -158,12 +148,11 @@ function checkName(){
         document.getElementById("loginBox").classList.add("hidden");
         document.getElementById("messageBox").classList.remove("hidden");
         var audio = document.getElementById("ramadanSong");
-        audio.play();
+        audio.play().catch(e => console.log("المتصفح منع التشغيل التلقائي"));
     } else {
         document.getElementById("error").innerText = "كلمة المرور غير صحيحة";
     }
 }
 </script>
-
 </body>
 </html>
