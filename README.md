@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-<title>🎊 إيهاب .. رمضانك أحلى</title>
+<title>يوسف → إيهاب | رمضان 2026</title>
 <style>
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-family: 'Segoe UI', 'Tahoma', sans-serif;
 }
 
 body {
     min-height: 100vh;
-    background: linear-gradient(135deg, #0b1a24 0%, #1c3a4f 100%);
+    background: linear-gradient(145deg, #0c1c28 0%, #1d3e52 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,15 +23,12 @@ body {
     overflow-x: hidden;
 }
 
-/* خلفية نجوم متحركة */
+/* نجوم احترافية */
 .stars {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background: transparent;
-    animation: starsMove 60s linear infinite;
     z-index: 0;
 }
 
@@ -41,92 +38,86 @@ body {
     width: 100%;
     height: 100%;
     background-image: 
-        radial-gradient(2px 2px at 15px 80px, #fff, rgba(0,0,0,0)),
-        radial-gradient(2px 2px at 72px 430px, #ffd700, rgba(0,0,0,0)),
-        radial-gradient(3px 3px at 550px 210px, #fff, rgba(0,0,0,0)),
-        radial-gradient(1px 1px at 890px 620px, #fffacd, rgba(0,0,0,0)),
-        radial-gradient(2px 2px at 250px 920px, #ffd700, rgba(0,0,0,0)),
-        radial-gradient(2px 2px at 120px 250px, #fff, rgba(0,0,0,0)),
-        radial-gradient(3px 3px at 720px 540px, #fff, rgba(0,0,0,0)),
-        radial-gradient(1px 1px at 400px 750px, #ffd700, rgba(0,0,0,0)),
-        radial-gradient(2px 2px at 880px 330px, #fff, rgba(0,0,0,0)),
-        radial-gradient(2px 2px at 520px 180px, #fffacd, rgba(0,0,0,0));
-    background-repeat: repeat;
-    background-size: 200px 200px;
-    opacity: 0.6;
-    animation: twinkle 4s infinite alternate;
+        radial-gradient(2px 2px at 10px 50px, #fff, transparent),
+        radial-gradient(3px 3px at 150px 200px, #ffd700, transparent),
+        radial-gradient(2px 2px at 300px 80px, #fff, transparent),
+        radial-gradient(4px 4px at 450px 600px, #fffacd, transparent),
+        radial-gradient(2px 2px at 600px 350px, #ffd700, transparent),
+        radial-gradient(3px 3px at 750px 150px, #fff, transparent),
+        radial-gradient(2px 2px at 850px 700px, #ffd700, transparent),
+        radial-gradient(3px 3px at 200px 800px, #fff, transparent),
+        radial-gradient(2px 2px at 500px 900px, #fffacd, transparent);
+    background-size: 300px 300px;
+    opacity: 0.7;
+    animation: starTwinkle 3s infinite alternate;
 }
 
-@keyframes starsMove {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(-30px, -30px); }
-}
-
-@keyframes twinkle {
+@keyframes starTwinkle {
     0% { opacity: 0.4; }
     100% { opacity: 0.9; }
 }
 
-/* القمر */
+/* قمر مضيء */
 .moon {
     position: fixed;
-    top: 25px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 85px;
-    filter: drop-shadow(0 0 30px #fffbc2);
-    animation: moonGlow 4s infinite alternate;
+    font-size: 90px;
+    filter: drop-shadow(0 0 40px #ffefb0);
+    animation: moonDance 6s infinite alternate;
     z-index: 1;
-    text-shadow: 0 0 30px #ffeb99;
+    text-shadow: 0 0 40px #ffeb99;
 }
 
-@keyframes moonGlow {
-    0% { transform: translateX(-50%) translateY(0) scale(1); filter: drop-shadow(0 0 20px #fffbc2); }
-    100% { transform: translateX(-50%) translateY(-15px) scale(1.05); filter: drop-shadow(0 0 40px #fff2b5); }
+@keyframes moonDance {
+    0% { transform: translateX(-50%) translateY(0) rotate(0deg); }
+    100% { transform: translateX(-50%) translateY(-20px) rotate(5deg); }
 }
 
-/* الفوانيس - تصميم جديد احترافي */
+/* فوانيس متنوعة */
 .lantern {
     position: fixed;
-    font-size: 60px;
-    filter: drop-shadow(0 0 15px #ffb347);
-    animation: lanternLight 2.5s infinite alternate;
+    font-size: 55px;
+    filter: drop-shadow(0 0 20px #ffaa33);
+    animation: lanternGlow 3s infinite alternate;
     z-index: 2;
-    text-shadow: 0 0 20px orange;
 }
 
-.l1 { top: 10px; right: 10px; animation-delay: 0s; }
-.l2 { top: 20px; left: 10px; animation-delay: 0.5s; font-size: 55px; }
-.l3 { bottom: 10px; right: 20px; animation-delay: 1s; font-size: 65px; }
-.l4 { bottom: 20px; left: 15px; animation-delay: 1.5s; font-size: 50px; }
-.l5 { top: 45%; left: 5px; animation-delay: 0.8s; font-size: 45px; }
-.l6 { top: 40%; right: 5px; animation-delay: 1.2s; font-size: 70px; }
+.l1 { top: 15px; right: 15px; animation-delay: 0s; }
+.l2 { top: 25px; left: 15px; animation-delay: 0.4s; font-size: 50px; }
+.l3 { bottom: 20px; right: 25px; animation-delay: 0.8s; font-size: 60px; }
+.l4 { bottom: 30px; left: 20px; animation-delay: 1.2s; font-size: 48px; }
+.l5 { top: 45%; left: 8px; animation-delay: 0.6s; font-size: 42px; }
+.l6 { top: 40%; right: 10px; animation-delay: 1s; font-size: 65px; }
+.l7 { top: 70%; left: 12px; animation-delay: 1.4s; font-size: 45px; }
+.l8 { top: 15%; right: 8px; animation-delay: 0.2s; font-size: 52px; }
 
-@keyframes lanternLight {
-    0% { transform: rotate(-5deg) scale(1); filter: drop-shadow(0 0 10px #ff8c00); }
-    100% { transform: rotate(5deg) scale(1.1); filter: drop-shadow(0 0 30px #ffaa33); }
+@keyframes lanternGlow {
+    0% { transform: rotate(-6deg) scale(1); filter: drop-shadow(0 0 15px #ff8c00); }
+    100% { transform: rotate(6deg) scale(1.08); filter: drop-shadow(0 0 35px #ffaa33); }
 }
 
-/* البطاقة الرئيسية - احترافية 2026 */
+/* البطاقة الرئيسية - فاخرة جداً */
 .card {
     position: relative;
     z-index: 10;
     width: 100%;
-    max-width: 440px;
-    background: rgba(10, 30, 45, 0.3);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 2px solid rgba(255, 215, 0, 0.3);
-    border-radius: 48px;
-    padding: 30px 24px;
+    max-width: 460px;
+    background: rgba(8, 28, 40, 0.35);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 2px solid rgba(255, 215, 0, 0.4);
+    border-radius: 60px;
+    padding: 35px 28px;
     box-shadow: 
-        0 30px 60px -15px rgba(0, 0, 0, 0.8),
-        0 0 0 1px rgba(255, 215, 0, 0.2) inset,
-        0 0 30px rgba(255, 215, 0, 0.2);
+        0 40px 70px -20px black,
+        0 0 0 1px rgba(255, 215, 0, 0.3) inset,
+        0 0 50px rgba(255, 215, 0, 0.25);
     overflow: hidden;
 }
 
-/* الصورة في الخلفية بشكل احترافي */
+/* الصورة في الخلفية - مضبوطة ومثالية */
 .card::before {
     content: "";
     position: absolute;
@@ -136,14 +127,15 @@ body {
     bottom: 0;
     background-image: url('image00.jpg');
     background-size: cover;
-    background-position: center;
-    opacity: 0.25;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    opacity: 0.3;
     z-index: -1;
-    filter: blur(2px) brightness(0.7);
-    transition: opacity 0.3s;
+    filter: blur(3px) brightness(0.8) contrast(1.1);
+    transition: opacity 0.5s;
 }
 
-/* طبقة زخرفية */
+/* طبقة ذهبية متلألئة */
 .card::after {
     content: "";
     position: absolute;
@@ -151,24 +143,20 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 30% 30%, rgba(255,215,0,0.1), transparent 70%);
+    background: radial-gradient(circle at 70% 20%, rgba(255,215,0,0.15), transparent 70%);
     z-index: -1;
 }
 
-/* صورة مصغرة زخرفية في الزاوية */
-.decoration-img {
+/* توقيع يوسف في الخلفية */
+.signature-bg {
     position: absolute;
-    top: -20px;
-    right: -20px;
-    width: 120px;
-    height: 120px;
-    background: url('image00.jpg') center/cover;
-    border-radius: 50%;
-    border: 3px solid #ffd700;
-    opacity: 0.4;
-    transform: rotate(15deg);
-    box-shadow: 0 0 30px gold;
+    bottom: 10px;
+    left: 20px;
+    font-size: 14px;
+    color: rgba(255, 215, 0, 0.2);
+    transform: rotate(-5deg);
     z-index: 0;
+    font-style: italic;
 }
 
 /* محتوى البطاقة */
@@ -177,216 +165,302 @@ body {
     z-index: 5;
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 15px;
+/* عنوان مع تأثير */
+.main-title {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.glowing-text {
-    background: linear-gradient(135deg, #fff6d5, #ffd700, #fff6d5);
+.main-title h1 {
+    font-size: 42px;
+    background: linear-gradient(135deg, #fffbf0, #ffd700, #fff0b5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 20px #ffd70099;
-    animation: textGlow 2.5s infinite alternate;
+    text-shadow: 0 0 30px #ffd700cc;
+    animation: titlePulse 2.5s infinite alternate;
 }
 
-@keyframes textGlow {
-    0% { text-shadow: 0 0 15px #ffd700; }
-    100% { text-shadow: 0 0 35px #ffaa00, 0 0 10px white; }
+@keyframes titlePulse {
+    0% { text-shadow: 0 0 20px #ffd700; }
+    100% { text-shadow: 0 0 45px #ffaa00, 0 0 15px white; }
 }
 
-.welcome-box {
-    background: rgba(0, 0, 0, 0.5);
+.sub-title {
+    color: #ffffffdd;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+/* صورة مصغرة في الزاوية */
+.corner-img {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    width: 100px;
+    height: 100px;
+    background: url('image00.jpg') center/cover;
+    border-radius: 50%;
+    border: 4px solid #ffd700;
+    opacity: 0.5;
+    transform: rotate(-10deg);
+    box-shadow: 0 0 40px gold;
+    z-index: 3;
+}
+
+/* صورة في الزاوية الأخرى */
+.corner-img2 {
+    position: absolute;
+    bottom: -25px;
+    right: -25px;
+    width: 90px;
+    height: 90px;
+    background: url('image00.jpg') center/cover;
+    border-radius: 50%;
+    border: 4px solid #ffd700;
+    opacity: 0.4;
+    transform: rotate(15deg);
+    box-shadow: 0 0 40px #ffbb00;
+    z-index: 3;
+}
+
+/* صندوق كلمة المرور */
+.pass-showcase {
+    background: rgba(0, 0, 0, 0.45);
     border-radius: 100px;
-    padding: 16px 20px;
-    margin: 20px 0;
-    border: 1px solid rgba(255, 215, 0, 0.4);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    padding: 20px;
+    margin: 25px 0;
+    border: 1px solid rgba(255, 215, 0, 0.5);
     backdrop-filter: blur(5px);
     text-align: center;
 }
 
-.welcome-box p {
-    color: #ffffffdd;
-    font-size: 22px;
-    margin-bottom: 8px;
+.pass-label {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    opacity: 0.9;
 }
 
-.password-highlight {
-    background: linear-gradient(145deg, #ffd700, #f5b81b);
+.pass-value {
+    background: linear-gradient(145deg, #ffd700, #e5b81b);
     display: inline-block;
-    padding: 12px 35px;
+    padding: 15px 40px;
     border-radius: 60px;
-    color: #0a1e2d;
-    font-size: 32px;
+    color: #0a1a24;
+    font-size: 42px;
     font-weight: 900;
-    letter-spacing: 3px;
-    box-shadow: 0 5px 0 #a07800, 0 10px 20px black;
-    border: 1px solid #fff2b5;
-    margin: 8px 0;
-    text-shadow: 0 1px 2px white;
+    letter-spacing: 5px;
+    box-shadow: 0 6px 0 #a07800, 0 15px 30px black;
+    border: 2px solid #fff2b5;
+    text-shadow: 0 2px 5px white;
+    margin: 5px 0;
 }
 
-.input-field {
+/* حقل الإدخال */
+.glass-input {
     width: 100%;
     padding: 18px 25px;
     font-size: 18px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 2px solid rgba(255, 215, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 215, 0, 0.4);
     border-radius: 60px;
     color: white;
     text-align: center;
-    margin: 20px 0 18px;
+    margin: 20px 0 15px;
     outline: none;
-    transition: 0.3s;
+    transition: 0.4s;
     backdrop-filter: blur(5px);
 }
 
-.input-field:focus {
+.glass-input:focus {
     border-color: #ffd700;
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
-    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+    background: rgba(255, 255, 255, 0.18);
+    transform: scale(1.02);
 }
 
-.input-field::placeholder {
-    color: #ffffffb3;
+.glass-input::placeholder {
+    color: #ffffffcc;
     font-size: 16px;
 }
 
-.btn {
+/* زر الدخول السحري */
+.magic-btn {
     width: 100%;
     padding: 18px 25px;
-    background: linear-gradient(145deg, #ffd700, #f5b81b);
+    background: linear-gradient(145deg, #ffd700, #f0b81b);
     border: none;
     border-radius: 60px;
     color: #0b1f2c;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 7px 0 #b17e1a, 0 10px 30px black;
-    transition: 0.1s;
-    border: 1px solid #fff5cc;
-    text-shadow: 0 1px 2px white;
-    margin-bottom: 10px;
+    box-shadow: 0 8px 0 #b17e1a, 0 15px 40px black;
+    transition: 0.15s;
+    border: 2px solid #fff5cc;
+    text-shadow: 0 1px 3px white;
+    margin: 5px 0 10px;
     position: relative;
     overflow: hidden;
 }
 
-.btn::before {
+.magic-btn::before {
     content: "✨";
     position: absolute;
-    left: -30px;
+    left: -20px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 24px;
-    animation: sparkle 2s infinite;
+    font-size: 28px;
+    animation: sparkleLeft 2s infinite;
 }
 
-.btn::after {
+.magic-btn::after {
     content: "✨";
     position: absolute;
-    right: -30px;
+    right: -20px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 24px;
-    animation: sparkle 2s infinite 1s;
+    font-size: 28px;
+    animation: sparkleRight 2s infinite 1s;
 }
 
-@keyframes sparkle {
-    0% { opacity: 0; transform: translateY(-50%) scale(0.5); }
-    50% { opacity: 1; transform: translateY(-50%) scale(1.2); }
-    100% { opacity: 0; transform: translateY(-50%) scale(0.5); }
+@keyframes sparkleLeft {
+    0%, 100% { left: -20px; opacity: 0.3; }
+    50% { left: 10px; opacity: 1; }
 }
 
-.btn:active {
-    transform: translateY(5px);
-    box-shadow: 0 2px 0 #b17e1a, 0 8px 20px black;
+@keyframes sparkleRight {
+    0%, 100% { right: -20px; opacity: 0.3; }
+    50% { right: 10px; opacity: 1; }
 }
 
+.magic-btn:active {
+    transform: translateY(6px);
+    box-shadow: 0 2px 0 #b17e1a, 0 10px 30px black;
+}
+
+/* رسالة الخطأ */
 .error-msg {
     color: #ffb3b3;
     text-align: center;
-    min-height: 24px;
-    font-size: 16px;
-    text-shadow: 0 0 8px #ff0000aa;
+    min-height: 28px;
+    font-size: 18px;
+    text-shadow: 0 0 10px #ff0000aa;
     margin: 10px 0 0;
+    font-weight: bold;
 }
 
-/* رسالة التهنئة - تصميم فاخر */
-.message-card {
-    background: rgba(8, 25, 38, 0.7);
+/* بطاقة التهاني - فاخرة جداً */
+.greeting-card {
+    background: rgba(10, 30, 45, 0.7);
     border: 3px solid #ffd700;
-    padding: 35px 25px;
+    padding: 30px 25px;
     text-align: center;
+    position: relative;
 }
 
-.profile-img {
-    width: 120px;
-    height: 120px;
+/* صورة مركزية كبيرة */
+.profile-large {
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
-    border: 5px solid #ffd700;
-    margin: 10px auto 20px;
+    border: 6px solid #ffd700;
+    margin: 10px auto 25px;
     background: url('image00.jpg') center/cover;
-    box-shadow: 0 0 40px #ffd700;
-    animation: profileGlow 3s infinite alternate;
+    box-shadow: 0 0 60px #ffd700;
+    animation: profilePulse 3s infinite alternate;
 }
 
-@keyframes profileGlow {
-    0% { box-shadow: 0 0 20px #ffd700; }
-    100% { box-shadow: 0 0 50px #ffaa00, 0 0 20px white; }
+@keyframes profilePulse {
+    0% { box-shadow: 0 0 30px #ffd700; transform: scale(1); }
+    100% { box-shadow: 0 0 80px #ffaa00, 0 0 30px white; transform: scale(1.05); }
 }
 
-.message-title {
-    font-size: 38px;
-    background: linear-gradient(135deg, #fff6bf, #ffd700);
+/* نص التهنئة */
+.greeting-title {
+    font-size: 44px;
+    background: linear-gradient(135deg, #fffacd, #ffd700, #fff0b5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
+    text-shadow: 0 0 20px gold;
+}
+
+.greeting-message {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    padding: 30px 20px;
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    font-size: 22px;
+    line-height: 2;
+    margin: 20px 0;
+}
+
+.greeting-message span {
+    color: #ffd700;
+    font-size: 26px;
+    display: block;
+    margin: 15px 0 5px;
+    text-shadow: 0 0 10px gold;
+}
+
+/* توقيع يوسف */
+.final-signature {
+    margin-top: 30px;
+    font-size: 32px;
+    color: #ffd700;
+    border-top: 3px dashed #ffd70080;
+    padding-top: 25px;
+    font-weight: bold;
     text-shadow: 0 0 15px gold;
 }
 
-.message-text {
-    color: #ffffff;
-    font-size: 22px;
-    line-height: 2;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 40px;
-    padding: 25px;
-    border: 1px solid rgba(255, 215, 0, 0.3);
-    backdrop-filter: blur(5px);
-}
-
-.signature-area {
-    margin-top: 30px;
-    font-size: 28px;
-    color: #ffd700;
-    border-top: 2px dashed #ffd70080;
-    padding-top: 25px;
-    font-weight: bold;
+/* رسالة خاصة من يوسف */
+.from-youss {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: rgba(255, 215, 0, 0.3);
+    font-size: 14px;
+    font-style: italic;
 }
 
 .hidden {
     display: none;
 }
 
-.fade-in {
-    animation: fadeIn 1s ease-in-out;
+.fade-scale {
+    animation: fadeScale 0.8s ease-out;
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; transform: scale(0.9); }
+@keyframes fadeScale {
+    0% { opacity: 0; transform: scale(0.8); }
     100% { opacity: 1; transform: scale(1); }
 }
 
-/* للشاشات الصغيرة */
+/* اهتزاز للغلط */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-12px); }
+    40%, 80% { transform: translateX(12px); }
+}
+
+.shake-effect {
+    animation: shake 0.4s ease-in-out;
+}
+
+/* للموبايل */
 @media (max-width: 480px) {
-    .moon { font-size: 65px; }
+    .moon { font-size: 70px; }
     .lantern { font-size: 45px; }
-    h1 { font-size: 30px; }
-    .password-highlight { font-size: 28px; padding: 10px 20px; }
-    .btn { font-size: 22px; }
-    .message-text { font-size: 18px; padding: 20px; }
+    .main-title h1 { font-size: 36px; }
+    .pass-value { font-size: 34px; padding: 12px 30px; }
+    .greeting-title { font-size: 36px; }
+    .greeting-message { font-size: 18px; }
+    .final-signature { font-size: 26px; }
 }
 </style>
 </head>
@@ -401,42 +475,55 @@ h1 {
 <div class="lantern l4">🏮</div>
 <div class="lantern l5">🏮</div>
 <div class="lantern l6">🏮</div>
+<div class="lantern l7">🏮</div>
+<div class="lantern l8">🏮</div>
 
 <!-- صفحة الدخول -->
 <div class="card" id="loginBox">
-    <div class="decoration-img"></div>
+    <div class="corner-img"></div>
+    <div class="corner-img2"></div>
+    <div class="signature-bg">✍️ من يوسف</div>
+    
     <div class="content">
-        <h1 class="glowing-text">🌙 إيهاب اهلاً 🌙</h1>
-        
-        <div class="welcome-box">
-            <p>🔐 رمضانك أجمل مع</p>
-            <div class="password-highlight">يوسف</div>
+        <div class="main-title">
+            <h1>🌙 إيـهـاب 🌙</h1>
+            <div class="sub-title">✨ من يوسف إلى إيهاب ✨</div>
         </div>
         
-        <input type="text" id="nameInput" class="input-field" placeholder="اكتب كلمة المرور هنا..." autocomplete="off">
+        <div class="pass-showcase">
+            <div class="pass-label">🔐 كلمة المرور</div>
+            <div class="pass-value">يوسف</div>
+        </div>
         
-        <button class="btn" onclick="checkName()">افتح الباب</button>
+        <input type="text" id="nameInput" class="glass-input" placeholder="اكتب كلمة المرور ..." autocomplete="off">
+        
+        <button class="magic-btn" onclick="checkName()">ادخل عالمي</button>
         <p id="error" class="error-msg"></p>
     </div>
 </div>
 
-<!-- صفحة التهاني بالصورة -->
-<div class="card message-card hidden" id="messageBox">
-    <div class="profile-img"></div>
-    <h2 class="message-title">⭐ رمضان كريم ⭐</h2>
+<!-- صفحة التهاني -->
+<div class="card greeting-card hidden" id="messageBox">
+    <div class="profile-large"></div>
     
-    <div class="message-text">
-        <p>✨ باقة أزهار ورسالة عطرة ✨</p><br>
-        <p>إلى إيهاب الغالي... 💙</p><br>
+    <h2 class="greeting-title">⭐ رمضان كريم ⭐</h2>
+    
+    <div class="greeting-message">
+        <span>💌 إلى إيهاب الغالي 💌</span>
+        
         بمناسبة حلول شهر رمضان المبارك 🌙<br>
-        أقدم لك أسمى آيات التهاني والتبريكات ✨<br>
+        أهديك هذه المفاجأة من القلب ✨<br>
         أعاده الله عليك بالخير واليمن والبركات 🤍<br>
-        وجعل أيامك كلها نجاح وتوفيق يا بطل 💫
+        وجعل أيامك كلها فرح ونجاح يا غالي 💫
+        
+        <span>💙 كل سنة وانت طيب 💙</span>
     </div>
     
-    <div class="signature-area">
-        💙 أخوك يوسف 💙
+    <div class="final-signature">
+        أخوك: يوسف
     </div>
+    
+    <div class="from-youss">✍️ صممها لك يوسف بحب</div>
 </div>
 
 <audio id="ramadanSong" src="song00.mp3" preload="auto"></audio>
@@ -445,60 +532,55 @@ h1 {
 function checkName() {
     let correctName = "يوسف";
     let enteredName = document.getElementById("nameInput").value.trim();
+    let loginBox = document.getElementById("loginBox");
     
     if (enteredName === correctName) {
-        // إخفاء صفحة الدخول وإظهار صفحة التهاني
-        document.getElementById("loginBox").classList.add("hidden");
-        document.getElementById("messageBox").classList.remove("hidden");
-        document.getElementById("messageBox").classList.add("fade-in");
+        // إخفاء صفحة الدخول وإظهار التهاني
+        loginBox.classList.add("hidden");
+        let msgBox = document.getElementById("messageBox");
+        msgBox.classList.remove("hidden");
+        msgBox.classList.add("fade-scale");
         
         // تشغيل الأغنية
         let audio = document.getElementById("ramadanSong");
         audio.volume = 0.6;
+        audio.currentTime = 0;
         
         let playPromise = audio.play();
         
         if (playPromise !== undefined) {
             playPromise.catch(error => {
-                console.log("التشغيل التلقائي محظور");
+                console.log("منع التشغيل التلقائي");
                 
-                // رسالة للمستخدم
-                const msgBox = document.getElementById("messageBox");
+                // إضافة رسالة للمس
                 const tapMsg = document.createElement("p");
                 tapMsg.style.color = "#ffd700";
                 tapMsg.style.marginTop = "20px";
                 tapMsg.style.fontSize = "18px";
+                tapMsg.style.animation = "fadeScale 1s";
                 tapMsg.innerText = "👆 اضغط على الشاشة لتشغيل الأغنية";
                 msgBox.appendChild(tapMsg);
                 
-                // تشغيل الأغنية عند أول لمسة
-                document.body.addEventListener('touchstart', function playOnce() {
+                // تشغيل عند اللمس
+                let touchHandler = function() {
                     audio.play();
                     if (tapMsg) tapMsg.remove();
-                    document.body.removeEventListener('touchstart', playOnce);
-                }, { once: true });
+                    document.body.removeEventListener('touchstart', touchHandler);
+                };
+                document.body.addEventListener('touchstart', touchHandler, { once: true });
             });
         }
     } else {
-        document.getElementById("error").innerText = "❌ كلمة المرور غير صحيحة!";
+        // رسالة خطأ
+        document.getElementById("error").innerText = "❌ غلط! كلمة المرور هي يوسف";
         
         // تأثير اهتزاز
-        document.getElementById("loginBox").style.animation = "shake 0.3s";
+        loginBox.classList.add("shake-effect");
         setTimeout(() => {
-            document.getElementById("loginBox").style.animation = "";
-        }, 300);
+            loginBox.classList.remove("shake-effect");
+        }, 400);
     }
 }
-
-// إضافة تأثير اهتزاز للغلط
-const style = document.createElement('style');
-style.innerHTML = `
-@keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-10px); }
-    75% { transform: translateX(10px); }
-}`;
-document.head.appendChild(style);
 </script>
 </body>
 </html>
